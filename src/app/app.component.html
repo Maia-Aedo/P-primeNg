@@ -1,0 +1,6 @@
+<p-menubar [model]="items"></p-menubar>
+<p-carousel [value]="clothes" [numVisible]="4" [numScroll]="1" [autoplayInterval]="3000" [circular]="true">
+  <ng-template let-clothes pTemplate="item">
+      <img src="{{clothes}}">
+  </ng-template>
+</p-carousel>
